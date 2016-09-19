@@ -7954,7 +7954,7 @@ Returns `true` if the system flag is enabled.
 The system allows to alter certain aspects of its default behavior via the system features. The following system features are defined:
 
   * `FEATURE_RETAINED_MEMORY` : enables/disables retained memory on backup power (disabled by default) (see [Enabling Backup RAM (SRAM)](#enabling-backup-ram-sram-))
-  * `FEATURE_WIFI_POWERSAVE_CLOCK` : enables/disables the Wi-Fi Powersave Clock on P1S6 (enabled by default).
+  * `FEATURE_WIFI_POWERSAVE_CLOCK` : enables/disables the Wi-Fi Powersave Clock on P1S6 on P1 (enabled by default).
 
 ## FEATURE_RETAINED_MEMORY
 
@@ -7971,7 +7971,7 @@ System.enableFeature(FEATURE_WIFI_POWERSAVE_CLOCK);
 System.disableFeature(FEATURE_WIFI_POWERSAVE_CLOCK);
 ```
 
-Enables/disables the Wi-Fi Powersave Clock on P1S6 (enabled by default). Useful for gaining 1 additional GPIO or PWM output on the P1.  When disabled, the 32kHz oscillator will not be running on this pin, and subsequently Powersave Mode (to be defined in the future) will not be usable.
+Enables/disables the Wi-Fi Powersave Clock on P1S6 on P1 (enabled by default). Useful for gaining 1 additional GPIO or PWM output on the P1.  When disabled, the 32kHz oscillator will not be running on this pin, and subsequently Powersave Mode (to be defined in the future) will not be usable.
 
 > Note that the FEATURE_WIFI_POWERSAVE_CLOCK feature setting is remembered even after power off or when entering safe mode. This is to allow your device to be configured once and then continue to function with the feature enabled/disabled.
 
@@ -7989,8 +7989,6 @@ void loop() {
   // your loop code
 }
 ```
-{{/if}}
-
 
 ## OTA Updates
 
