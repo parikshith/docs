@@ -7949,6 +7949,7 @@ Disables the system flag.
 
 Returns `true` if the system flag is enabled.
 
+{{#unless core}}
 ### System Features
 
 The system allows to alter certain aspects of its default behavior via the system features. The following system features are defined:
@@ -7989,6 +7990,7 @@ void loop() {
   // your loop code
 }
 ```
+{{/unless}}
 
 ## OTA Updates
 
