@@ -28,7 +28,7 @@ See [the official Javascript client](/reference/javascript/).
 
 ## Go
 
-* [Gobot robotics framework adapter by The Hybrid Group](http://gobot.io/documentation/platforms/spark/)
+* [Gobot robotics framework adapter by The Hybrid Group](https://gobot.io/documentation/platforms/particle/)
 
 ## PHP
 
